@@ -1,0 +1,289 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Fira Code", monospace;
+  background-color: #1c2333;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1300px;
+
+  margin-top: 30px;
+  margin-left: 5px;
+  background-color: white;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.473);
+}
+
+.lateral-page {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  font-size: 25px;
+  right: 0;
+  transform: translateX(65px);
+  padding: 15px;
+  gap: 30px;
+  background-color: #d8d8d8;
+}
+
+.lateral-page .icon {
+  cursor: pointer;
+  border-radius: 999px;
+  padding: 5px;
+  transition: 100ms;
+}
+
+.lateral-page .icon:hover {
+  background-color: white;
+  transition: 100ms;
+}
+
+.wrapper-right {
+  display: flex;
+}
+.wrapper-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-photo {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center top;
+  transform: translateY(-35px);
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.651);
+}
+
+.main-header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  padding-top: 10px;
+}
+
+.main-header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: calc(100% - 80px);
+  height: 1.5px;
+  background-color: rgba(0, 0, 0, 0.226);
+  bottom: 0;
+  left: 40px;
+}
+
+.main-header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  transform: rotate(90deg) translateY(-329px);
+  width: 9%;
+  height: 0.1px;
+  background-color: rgba(0, 0, 0, 0.226);
+  top: 52px;
+}
+
+.information-user {
+}
+
+.information-user .profession {
+  margin-bottom: 10px;
+}
+
+.information-user .location {
+  display: flex;
+  align-items: center;
+  color: rgba(128, 128, 128, 0.671);
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.stats-logo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  font-size: 23px;
+  height: 100%;
+  position: relative;
+}
+
+.stats-logo::after {
+  content: "";
+  display: block;
+  position: absolute;
+  transform: rotate(90deg) translateY(-166px);
+  width: 56%;
+  height: 0.1px;
+  background-color: rgba(0, 0, 0, 0.226);
+  top: 42px;
+}
+
+.main-button {
+  display: flex;
+  margin-right: 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 140px;
+  height: 35px;
+  border: 0;
+  color: white;
+  background-color: rgb(255, 158, 47);
+  font-size: 15px;
+  cursor: pointer;
+  transition: 100ms;
+}
+
+.main-button:hover {
+  transition: 100ms;
+  transform: scale(1.09);
+}
+
+.main-section {
+  display: flex;
+  margin: 0 40px;
+  padding-top: 20px;
+  gap: 80px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-me .main-title {
+  font-size: 20px;
+}
+
+.about-me .text {
+  font-size: 13px;
+  color: rgba(128, 128, 128, 0.671);
+}
+
+.main-skills {
+}
+
+.main-skills .main-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.main-skills .row {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.skill {
+  display: flex;
+
+  width: 100px;
+  font-size: 13px;
+}
+
+.progress-bar {
+  background-color: rgba(128, 128, 128, 0.274);
+  border-radius: 9999px;
+  height: 5px;
+}
+
+.progress-bar::-webkit-progress-bar {
+  background-color: rgba(128, 128, 128, 0.274);
+}
+.progress-bar::-moz-progress-bar {
+  background-color: rgba(128, 128, 128, 0.274);
+}
+
+.progress-bar::-webkit-progress-value {
+  background-color: black;
+  border-radius: 9999px;
+}
+
+.progress-bar::-moz-progress-value {
+  background-color: black;
+  border-radius: 9999px;
+}
+
+.main-pictures {
+}
+
+.row-pictures {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 20px;
+}
+
+.res {
+  display: flex;
+  gap: 20px;
+}
+
+.feedback-pictures {
+  position: relative;
+}
+
+.feedback-pictures img {
+  max-width: 400px;
+}
+
+.feedback-box {
+  display: flex;
+  position: absolute;
+  font-size: 13px;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  padding: 10px 0;
+  background-color: #0d2868;
+  color: rgba(255, 255, 255, 0.534);
+  top: 0px;
+}
+
+.feedback-box .heart {
+  color: rgb(201, 25, 25);
+}
+
+.button-more {
+  text-align: right;
+  margin-right: 37px;
+}
+
+.button-more .more {
+  width: 100px;
+  padding: 9px 0;
+  border: 0;
+  text-align: center;
+  font-weight: 700;
+  background-color: rgb(226, 218, 218);
+  cursor: pointer;
+  transition: 100ms;
+}
+
+.button-more .more:hover {
+  transition: 100ms;
+  transform: scale(1.09);
+}
